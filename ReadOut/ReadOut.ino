@@ -22,18 +22,18 @@ void loop()
 	
 	for(i=1;i<=count;i++)
 	{
-	buffer[0] = ROM_512.ReadByte(0x57 ,2 + i * 10);
-	buffer[1] = ROM_512.ReadByte(0x57 ,2 + i * 10 + 1);
-	buffer[2] = ROM_512.ReadByte(0x57 ,2 + i * 10 + 2);
-	buffer[3] = ROM_512.ReadByte(0x57 ,2 + i * 10 + 3);
-	buffer[4] = ROM_512.ReadByte(0x57 ,2 + i * 10 + 4);
-	buffer[5] = ROM_512.ReadByte(0x57 ,2 + i * 10 + 5);
+	buffer[0] = ROM_512.ReadByte(0x57 ,6 + i * 10);
+	buffer[1] = ROM_512.ReadByte(0x57 ,6 + i * 10 + 1);
+	buffer[2] = ROM_512.ReadByte(0x57 ,6 + i * 10 + 2);
+	buffer[3] = ROM_512.ReadByte(0x57 ,6 + i * 10 + 3);
+	buffer[4] = ROM_512.ReadByte(0x57 ,6 + i * 10 + 4);
+	buffer[5] = ROM_512.ReadByte(0x57 ,6 + i * 10 + 5);
 
-	buffer[6] = ROM_512.ReadByte(0x57 ,2 + i * 10 + 6);
-	buffer[7] = ROM_512.ReadByte(0x57 ,2 + i * 10 + 7);
+	buffer[6] = ROM_512.ReadByte(0x57 ,6 + i * 10 + 6);
+	buffer[7] = ROM_512.ReadByte(0x57 ,6 + i * 10 + 7);
 
-	buffer[8] = ROM_512.ReadByte(0x57 ,2 + i * 10 + 8);
-	buffer[9] = ROM_512.ReadByte(0x57 ,2 + i * 10 + 9);
+	buffer[8] = ROM_512.ReadByte(0x57 ,6 + i * 10 + 8);
+	buffer[9] = ROM_512.ReadByte(0x57 ,6 + i * 10 + 9);
 
 //	Serial.println((ROM_512.ReadByte(0x57 ,0))+((ROM_512.ReadByte(0x57 ,1))<<8),DEC);
     Serial.print(i);
